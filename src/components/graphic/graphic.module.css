@@ -1,0 +1,18 @@
+.graphicContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.chartContainer {
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: fit-content;
+}
+
+.titleGraphStyle {
+    font-size: 20px;
+    font-weight: bold;
+    color: #6a4880;
+    text-align: center;
+    margin-bottom: 10px;
+}

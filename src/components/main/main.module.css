@@ -1,0 +1,22 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    flex:0.2;
+}
+
+.menuChildren {
+    flex: 0.9;
+    display: flex;
+}
+
+.children {
+    background-color: #D5D5DE;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    overflow: auto;
+}

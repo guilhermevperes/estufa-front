@@ -1,0 +1,49 @@
+.menuItemContaier {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    height: auto;
+}
+
+.menuItemTitle {
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    margin-left: 4px;
+    height: auto;
+}
+
+.titleContainer {
+    display: flex;
+    justify-content: flex-start;
+    height: 16px !important;
+    height: auto;
+}
+
+.optionsContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 6px;
+}
+
+.optionStyle {
+    font-size: 12px;
+    font-weight: bold;
+    color: #3cab2b;
+    cursor: pointer;
+    margin-left: 4px;
+    height: auto;
+}
+
+.optionStyleMouseOver {
+    font-size: 12px;
+    font-weight: bold;
+    color: #3cab2b;
+    cursor: pointer;
+    margin-left: 4px;
+    height: auto;
+    opacity: 0.5;
+}

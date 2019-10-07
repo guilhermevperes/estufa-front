@@ -1,0 +1,29 @@
+.headerContainer {
+    flex: 0.1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6a4880;
+}
+
+.userContainer {
+    height: 60px;
+    display: flex;
+    flex: 0.2;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.headerIconContainer {
+    display: flex;
+    align-items: center;
+    flex: 0.6 1;
+    justify-content: start;
+    margin-left: 10px;
+}
+
+.dashboardTitle {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}

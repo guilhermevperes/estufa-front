@@ -1,0 +1,24 @@
+.registerUserModalContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 400px;
+    min-height: 300px;
+}
+
+.registerUserModalMessage {
+    height: 10px;
+}
+
+.registerUserModalInputContainer {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.registerUserModalButtonContainer {
+    flex: 0.2;
+    width: 60%
+}

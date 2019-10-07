@@ -1,0 +1,68 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    flex: 0.3;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #6a4880;
+}
+
+.body {
+    display: flex;
+    flex: 0.65;
+    justify-content: center;
+    background-color: #d5d5de;
+}
+
+.loginContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+    height: 300px;
+    border-radius: 16px;
+    margin-top: 20px;
+    background-color: #ffffff
+}
+
+.dangerText {
+    height: 10px;
+}
+
+.loginBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 0.4;
+    max-width: 250px;
+}
+
+.loginFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    flex: 0.3
+}
+
+.registerButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #9a9a9a;
+    cursor: pointer;
+}
+
+.footer {
+    flex: 0.05;
+    background-color: #6a4880;
+}
