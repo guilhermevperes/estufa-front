@@ -19,6 +19,9 @@
     border-radius: 6px;
     margin-left: 6px;
     background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .inputBorderDanger {

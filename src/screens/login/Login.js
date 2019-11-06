@@ -64,7 +64,7 @@ export default function Login ({ history }) {
 
   return (
     <div className={styles.container}>
-      <div className={styles.header}>
+      <div className={styles.header} >
         <Title text='Monitoramento Estufa' />
         <SubTitle text='TCC - Engenharia em Automação e Controle' />
       </div>

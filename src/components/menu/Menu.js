@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './menu.module.css'
 import MenuItem from '../menu-item/MenuItem'
 
-export default function Menu ({ items, ...props }) {
+export default function Menu ({ items, history, username, ...props }) {
   const userOptions = [
     { label: 'Configurações', key: 'config' },
     { label: 'Criar Novo Usuário', key: 'registerUser' }
@@ -14,8 +14,8 @@ export default function Menu ({ items, ...props }) {
 
   return (
     <div className={styles.menuContainer}>
-      <MenuItem title='Plantas' options={plantOptions} />
-      <MenuItem title='Usuários' options={userOptions} />
+      <MenuItem title='Plantas' options={plantOptions} history={history} username={username} />
+      <MenuItem title='Usuários' options={userOptions} history={history} username={username} />
     </div>
   )
 }

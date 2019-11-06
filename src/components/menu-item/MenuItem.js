@@ -3,13 +3,31 @@ import styles from './menuItem.module.css'
 import Image from '../image/Image'
 import MenuDot from '../../assets/menuDot.svg'
 
-export default function MenuItem ({ title, options, ...props }) {
-  const [showOptions, setShowOptions] = useState(false)
+export default function MenuItem ({ title, options, history, username, ...props }) {
+  const [showOptions, setShowOptions] = useState(true)
   const [mouseOver, setMouseOver] = useState(false)
+
+  function clickOption (key) {
+    switch (key) {
+      case 'registerPlant': goToRegisterPlant()
+    }
+  }
+
+  function goToRegisterPlant () {
+    history.push({ pathname: '/register-plant', state: { username: username } })
+  }
 
   function renderOptions () {
     return options.map((item, i) => (
-      <span key={i} className={mouseOver === i ? styles.optionStyleMouseOver : styles.optionStyle} onMouseOver={() => setMouseOver(i)} onMouseLeave={() => setMouseOver()}>{item.label}</span>
+      <span
+        key={i}
+        className={mouseOver === i ? styles.optionStyleMouseOver : styles.optionStyle}
+        onMouseOver={() => setMouseOver(i)}
+        onMouseLeave={() => setMouseOver()}
+        onClick={() => clickOption(item.key)}
+      >
+        {item.label}
+      </span>
     ))
   }
   return (
