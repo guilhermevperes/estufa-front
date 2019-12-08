@@ -1,7 +1,6 @@
 import tccFetch from './tccFetch'
 
 export function startComunicationApi (plantData) {
-  console.log(plantData)
   const url = '/arduino'
   const objectReturn = {}
   const options = {

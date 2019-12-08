@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Select from '../select/Select'
 import styles from './dataView.module.css'
 
 export default function DataView ({ title, plantName, controlType, selectOptions, plantSelected, buttonClicked, setPlant, ...props }) {
@@ -8,6 +9,7 @@ export default function DataView ({ title, plantName, controlType, selectOptions
 
   function handleClick (event) {
     setPlant(event.target.value)
+    console.log('event.target.value :', event.target.value)
   }
   return (
     <div>
@@ -15,13 +17,15 @@ export default function DataView ({ title, plantName, controlType, selectOptions
       <div className={styles.dataContainer}>
         <span className={styles.labelStyle}>Planta:<span className={styles.labelContent}>{plantName}</span> </span>
         <span className={styles.labelStyle}>Tipo de controle:<span className={styles.labelContent}> {controlType}</span></span>
-        <div style={{ flex: 0.5 }}>
-          <span className={styles.labelStyle}>Selecione uma planta:
+        <div>
+          {/* <span className={styles.labelStyle}>Selecione uma planta:
             <select onChange={handleClick}>
               {plantSelected ? null : <option value='1'>Selecione</option>}
               {renderOptions()}
+
             </select>
-          </span>
+          </span> */}
+          <Select title='Selecione uma planta' options={selectOptions} setValue={setPlant} />
         </div>
         <div className={buttonClicked ? styles.dataViewButtonClicked : styles.dataViewButton} {...props}>
           {buttonClicked ? 'Desligar conexão' : 'Ligar conexão'}

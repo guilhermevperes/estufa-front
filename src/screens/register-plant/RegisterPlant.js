@@ -95,7 +95,7 @@ export default function RegisterPlant ({ history, location }) {
             <Input placeholder='Controle (PID / FUZZY)' value={controlType} setInputValue={setControlType} danger={controlTypeDanger} />
           </div>
           <div className={styles.inputStyle}>
-            <Input placeholder='Temperatura (%)' value={temperature} setInputValue={setTemperature} danger={temperatureDanger} />
+            <Input placeholder='Temperatura (°C)' value={temperature} setInputValue={setTemperature} danger={temperatureDanger} />
           </div>
           <div className={styles.inputStyle}>
             <Input placeholder='Umidade (%)' value={moisture} setInputValue={setMoisture} danger={moistureDanger} />
